@@ -12,15 +12,26 @@ To install and run the project, please follow the steps below:
    git clone https://github.com/smithavt14/basic-llm.git
    ```
 
-2. Install the project dependencies using NPM.
+2. Create an .env file in the root folder and add your API keys. You can find information about the OpenAI API [here](https://platform.openai.com/overview) and the SerpApi [here](https://serpapi.com/).
+   
+   ```bash
+   touch .env
+   ```
 
+   ```
+   OPENAI_API_KEY="sk..."
+   SERPAPI_API_KEY=""
+   ```
+   
+3. Install the project dependencies using Yarn.
+   
    ```
    cd basic-llm
-   npm install
+   yarn install
    ```
-
-3. Run the project using the following command:
-
+   
+4. Run the project using the following command:
+   
    ```
    node index.js
    ```
